@@ -1,0 +1,54 @@
+main > article.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template: 1fr / 1fr;
+  width: 100%;
+  height: 200px;
+}
+
+main > article.hero > div.bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+main > article.hero > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+main > article.hero > section > h2 {
+  -webkit-filter: drop-shadow(0px 0px 10px black);
+          filter: drop-shadow(0px 0px 10px black);
+  width: 10em;
+  text-align: center;
+  display: block;
+  color: #FFE6EF;
+  text-shadow: 0px 0px 3px black, 0px 0px 3px black;
+}
+/*# sourceMappingURL=index.css.map */

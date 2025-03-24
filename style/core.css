@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #1A1A1D;
+  color: #FFE6EF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+}
+
+header > i {
+  position: absolute;
+  left: 1em;
+  font-size: 1.5rem;
+  color: #FFE6EF;
+}
+
+header > div > a {
+  font-size: 2rem;
+  font-weight: 200;
+  color: #FFE6EF;
+  text-decoration: none;
+}
+
+header > nav {
+  display: none;
+}
+
+.breadcrumbs {
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5em;
+}
+
+.breadcrumbs > p {
+  display: inline;
+  font-size: 0.75em;
+}
+
+.breadcrumbs > p:nth-child(even) {
+  color: #A64D79;
+}
+
+.breadcrumbs > p:nth-child(odd) {
+  color: #FFE6EF;
+}
+
+.breadcrumbs > a {
+  color: #FFE6EF;
+  font-size: 0.75em;
+}
+
+.desktop-breadcrumbs {
+  display: none;
+}
+
+#phone-menu {
+  z-index: 99;
+}
+
+#phone-menu.closed {
+  display: none;
+}
+
+#phone-menu.open {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  top: 4em;
+}
+
+#phone-menu > ul {
+  width: 100%;
+}
+
+#phone-menu > ul > li > a {
+  display: block;
+  text-align: center;
+  padding: 1.0em;
+  color: #FFE6EF;
+  text-decoration: none;
+  background: #1A1A1D;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+footer {
+  width: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer > div {
+  width: 100%;
+  max-width: 1000px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p, a {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em;
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+  }
+  header > #burger-menu-btn {
+    display: none;
+  }
+  header > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header > div > .desktop-breadcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 1em;
+  }
+  header > nav {
+    display: block;
+  }
+  header > nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1em;
+  }
+  header > nav > ul > li {
+    list-style: none;
+    padding: 0.5em;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    width: 100px;
+    border-bottom: solid 2px #FFE6EF;
+  }
+  header > nav > ul > li > a {
+    color: #FFE6EF;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  #phone-menu.open {
+    display: none;
+  }
+  .phone-breadcrumbs {
+    display: none;
+  }
+  main {
+    margin-top: 4em;
+  }
+}
+/*# sourceMappingURL=core.css.map */
