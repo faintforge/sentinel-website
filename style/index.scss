@@ -64,8 +64,10 @@ main {
                 line-height: 1.5em;
             }
 
-            >button {
+            >a {
                 margin-top: 1em;
+                display: block;
+                width: fit-content;
                 outline: none;
                 padding: 1em;
                 font-weight: bolder;
@@ -73,6 +75,7 @@ main {
                 border: 2px lighten($color: $primary, $amount: 20) solid;
                 color: lighten($color: $primary, $amount: 20);
                 border-radius: 10px;
+                text-decoration: none;
                 transition: color 0.1s ease-out,
                     background 0.1s ease-out,
                     border-color 0.1s ease-out;

@@ -93,8 +93,12 @@ main > article.info > section > p {
   line-height: 1.5em;
 }
 
-main > article.info > section > button {
+main > article.info > section > a {
   margin-top: 1em;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   outline: none;
   padding: 1em;
   font-weight: bolder;
@@ -102,17 +106,18 @@ main > article.info > section > button {
   border: 2px #cb8eac solid;
   color: #cb8eac;
   border-radius: 10px;
+  text-decoration: none;
   -webkit-transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out;
   transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out;
 }
 
-main > article.info > section > button:hover {
+main > article.info > section > a:hover {
   background: #A64D79;
   color: #FFE6EF;
   border-color: #A64D79;
 }
 
-main > article.info > section > button:active {
+main > article.info > section > a:active {
   background: #6A1E55;
   border-color: #6A1E55;
   -webkit-transform: translateY(5px);
