@@ -38,11 +38,16 @@ header {
         color: $fg;
     }
 
-    >div>a {
-        font-size: 2rem;
-        font-weight: 200;
-        color: $fg;
-        text-decoration: none;
+    >div {
+        display: flex;
+        align-items: center;
+
+        >a {
+            font-size: 2rem;
+            font-weight: 200;
+            color: $fg;
+            text-decoration: none;
+        }
     }
 
     >nav {

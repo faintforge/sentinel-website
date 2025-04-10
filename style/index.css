@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,5 +123,37 @@ main > article.info > section > a:active {
   border-color: #6A1E55;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
+}
+
+main > article.info > section > a:focus {
+  outline: auto;
+}
+
+.hidden-circle {
+  display: block;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #A64D79;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  -webkit-transition: border-radius 0.2s ease-out;
+  transition: border-radius 0.2s ease-out;
+  margin-right: 1em;
+}
+
+.hidden-circle:hover {
+  border-radius: 5px;
+}
+
+.hidden-circle > p {
+  font-family: "Lobster Two", sans-serif;
 }
 /*# sourceMappingURL=index.css.map */

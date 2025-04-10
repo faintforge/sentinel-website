@@ -51,6 +51,15 @@ header > i {
   color: #FFE6EF;
 }
 
+header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 header > div > a {
   font-size: 2rem;
   font-weight: 200;
