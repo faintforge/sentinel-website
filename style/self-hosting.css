@@ -4,7 +4,11 @@ main > article {
   padding-right: 2em;
 }
 
-main > article > ol > li > a {
+main a {
   color: #bb6b93;
+}
+
+main a:visited {
+  color: #babb6b;
 }
 /*# sourceMappingURL=self-hosting.css.map */

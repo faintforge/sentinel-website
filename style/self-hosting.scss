@@ -5,9 +5,13 @@ main {
         max-width: 70ch;
         padding-left: 2em;;
         padding-right: 2em;;
-    
-        >ol>li>a {
-            color: lighten($color: $primary, $amount: 10);
+    }
+
+    a {
+        color: lighten($color: $primary, $amount: 10);
+
+        &:visited {
+            color: adjust-hue($color: lighten($primary, $amount: 10), $degrees: 90);
         }
     }
 }
