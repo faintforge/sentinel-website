@@ -5,13 +5,37 @@ main {
         max-width: 70ch;
         padding-left: 2em;;
         padding-right: 2em;;
-    }
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
 
-    a {
-        color: lighten($color: $primary, $amount: 10);
+        >section {
 
-        &:visited {
-            color: adjust-hue($color: lighten($primary, $amount: 10), $degrees: 90);
+            >h3 {
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+
+            >p,>pre {
+                margin-bottom: 1em;
+            }
+
+            a {
+                color: lighten($color: $primary, $amount: 10);
+
+                &:visited {
+                    color: adjust-hue($color: lighten($primary, $amount: 10), $degrees: 90);
+                }
+            }
+
+            span.inlay {
+                background: darken($bg, $amount: 3);
+                padding: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
         }
     }
+
 }

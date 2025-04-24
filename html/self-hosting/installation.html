@@ -24,7 +24,7 @@
                 <p>/</p>
                 <a href="../self-hosting.html">Self Hosting</a>
                 <p>/</p>
-                <p>VPS</p>
+                <p>Installation</p>
             </div>
         </div>
         <nav>
@@ -40,7 +40,7 @@
         <p>/</p>
         <a href="../self-hosting.html">Self Hosting</a>
         <p>/</p>
-        <p>VPS</p>
+        <p>Installation</p>
     </div>
 
     <nav id="phone-menu" class="closed">
@@ -52,22 +52,27 @@
 
     <main>
         <article>
-            <h2>Setting up a VPS</h2>
+            <h2>Installing Sentinel</h2>
 
             <section>
-                <h3>Aquire a VPS</h3>
-                <p>Firstly, you must aquire a <abbr title="Virtual Private Server">VPS</abbr> that allows you to run a reverse proxy, such as <a href="https://httpd.apache.org/">Apache</a> or <a href="https://nginx.org/">NGINX</a>. This tutorial will be using NGINX.</p>
-                <p><a href="https://hostinger.com/">Hostinger</a> has been tested and confirmed to work with Sentinel, though there's no affiliation between the two.</p>
+                <h3>Prepping Sentinel</h3>
+                <p>The Sentinel repository is hosted on GitHub. In order to download it locally to your VPS run:</p>
+                <pre><code class="language-shell">$ git clone https://github.com/faintforge/sentinel.git</code></pre>
+                <p>Now a directory named 'sentinel' should appear in the same directory you ran the command in.</p>
+                <p>Enter into the directory and run:</p>
+                <pre><code class="language-shell">$ python main.py</code></pre>
+                <p>This should start Sentinel in debug mode. This is NOT meant to be used for continual use.</p>
+                <p>If no errors are thrown then you can go on to the next step.</p>
             </section>
 
             <section>
-                <h3>Install dependencies</h3>
-                <p>After connecting to your VPS, probably visa SSH, run the following command to make sure all dependencies are installed.</p>
-                <pre><code class="language-shell">$ sudo apt install python3 nginx gunicorn</code></pre>
-                <p>This command is used for Debian based operating systems.</p>
+                <h3>Configuring NGINX</h3>
+                <p>NGINX will be our reverse proxy. To configure it, all you need to do is move the <span class="inlay">nginx.conf</span> file from the sentinel directory to <span class="inlay">/etc/nginx/</span></p>
+                <pre><code class="language-shell">$ sudo cp ./nginx.conf /etc/nginx/</code></pre>
+                <p>Some edits need to be made to the configuration file. Change all instances of <span class="inlay">WEBSITE_URL</span> to your website url.</p>
             </section>
 
-            <a href="installation.html" class="btn">Next</a>
+            <a href="running.html" class="btn">Next</a>
         </article>
     </main>
 

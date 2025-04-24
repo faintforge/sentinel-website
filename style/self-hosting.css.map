@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AACI,IADA,GACC,OAAO,CAAC;EACL,SAAS,EAAE,IAAI;EACf,YAAY,EAAE,GAAG;EACjB,aAAa,EAAE,GAAG;CACrB;;AALL,AAOI,IAPA,CAOA,CAAC,CAAC;EACE,KAAK,EAAE,OAAsC;CAKhD;;AAbL,AAUQ,IAVJ,CAOA,CAAC,AAGI,QAAQ,CAAC;EACN,KAAK,EAAE,OAAgE;CAC1E",
-    "sources": [
-        "self-hosting.scss",
-        "colors.scss"
-    ],
-    "names": [],
-    "file": "self-hosting.css"
-}
+{"version":3,"sourceRoot":"","sources":["self-hosting.scss"],"names":[],"mappings":"AAGI;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAII;EACI;EACA;;AAGJ;EACI;;AAGJ;EACI;;AAEA;EACI;;AAIR;EACI;EACA;EACA;EACA","file":"self-hosting.css"}

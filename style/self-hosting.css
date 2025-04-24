@@ -2,13 +2,29 @@ main > article {
   max-width: 70ch;
   padding-left: 2em;
   padding-right: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+main > article > section > h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+main > article > section > p, main > article > section > pre {
+  margin-bottom: 1em;
+}
+main > article > section a {
+  color: rgb(186.5555555556, 107.4444444444, 146.5555555556);
+}
+main > article > section a:visited {
+  color: rgb(186.1111111111, 186.5555555556, 107.4444444444);
+}
+main > article > section span.inlay {
+  background: rgb(18.7672727273, 18.7672727273, 20.9327272727);
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-main a {
-  color: #bb6b93;
-}
-
-main a:visited {
-  color: #babb6b;
-}
 /*# sourceMappingURL=self-hosting.css.map */
