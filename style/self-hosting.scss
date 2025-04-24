@@ -1,0 +1,13 @@
+@import "colors";
+
+main {
+    >article {
+        max-width: 70ch;
+        padding-left: 2em;;
+        padding-right: 2em;;
+    
+        >ol>li>a {
+            color: lighten($color: $primary, $amount: 10);
+        }
+    }
+}

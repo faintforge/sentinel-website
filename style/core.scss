@@ -43,10 +43,13 @@ header {
         align-items: center;
 
         >a {
-            font-size: 2rem;
-            font-weight: 200;
-            color: $fg;
             text-decoration: none;
+
+            >h1 {
+                color: $fg;
+                font-weight: 200;
+                font-size: 2rem;
+            }
         }
     }
 
@@ -115,6 +118,9 @@ header {
 
 main {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {

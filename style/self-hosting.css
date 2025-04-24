@@ -1,0 +1,10 @@
+main > article {
+  max-width: 70ch;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+main > article > ol > li > a {
+  color: #bb6b93;
+}
+/*# sourceMappingURL=self-hosting.css.map */

@@ -1,16 +1,10 @@
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-main > article {
+main > form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,17 +23,17 @@ main > article {
   gap: 1em;
 }
 
-main > article > div {
+main > form > div {
   width: 100%;
   position: relative;
   display: inline-block;
 }
 
-main > article > div:has(input[type=text]:focus) > label, main > article > div:has(input[type=password]:focus) > label {
+main > form > div:has(input[type=text]:focus) > label, main > form > div:has(input[type=password]:focus) > label {
   color: #FFE6EF;
 }
 
-main > article > div > label {
+main > form > div > label {
   position: absolute;
   left: 0;
   top: 0;
@@ -50,9 +44,15 @@ main > article > div > label {
   color: #cbcbd1;
   -webkit-transition: 0.1s color border-color;
   transition: 0.1s color border-color;
+  display: inline;
 }
 
-main > article > div > input[type=text], main > article > div > input[type=password] {
+main > form > div > label > p {
+  display: inline;
+  color: #cb8eac;
+}
+
+main > form > div > input[type=text], main > form > div > input[type=password], main > form > div > input[type=email] {
   width: 100%;
   padding: 0.75em;
   background: transparent;
@@ -65,16 +65,16 @@ main > article > div > input[type=text], main > article > div > input[type=passw
   transition: 0.1s ease-out border-color;
 }
 
-main > article > div > input[type=text]:focus, main > article > div > input[type=password]:focus {
+main > form > div > input[type=text]:focus, main > form > div > input[type=password]:focus, main > form > div > input[type=email]:focus {
   border-color: #A64D79;
 }
 
-main > article a {
+main > form a {
   color: #FFE6EF;
   font-size: 0.9em;
 }
 
-main > article > input[type=submit] {
+main > form > input[type=submit] {
   padding: 0.75em;
   width: 100%;
   border: none;
@@ -87,7 +87,7 @@ main > article > input[type=submit] {
   transition: 0.1s background ease-out, 0.1s font-weight ease-out;
 }
 
-main > article > input[type=submit]:hover {
+main > form > input[type=submit]:hover {
   background-color: #A64D79;
   font-weight: bolder;
 }
