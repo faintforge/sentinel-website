@@ -39,3 +39,24 @@ main {
     }
 
 }
+
+.good-job-gallery {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / auto;
+    justify-content: center;
+    
+    picture {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .good-job-gallery {
+        grid-template-columns: 1fr 1fr;
+
+        picture:last-child {
+            grid-area: 1/3 2/3;
+        }
+    }
+}
