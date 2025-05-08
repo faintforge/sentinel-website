@@ -144,6 +144,39 @@ p, a {
     font-size: 1rem;
 }
 
+.btn {
+    display: block;
+    width: fit-content;
+    outline: none;
+    padding: 1em;
+    font-weight: bolder;
+    background: none;
+    cursor: pointer;
+    border: 2px lighten($color: $primary, $amount: 20) solid;
+    color: lighten($color: $primary, $amount: 20);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: color 0.1s ease-out,
+                background 0.1s ease-out,
+                border-color 0.1s ease-out;
+
+    &:hover {
+        background: $primary;
+        color: $fg;
+        border-color: $primary;
+    }
+
+    &:active {
+        background: $medium;
+        border-color: $medium;
+        transform: translateY(5px);
+    }
+
+    &:focus {
+        outline: auto;
+    }
+}
+
 @media screen and (min-width: 600px) {
     header {
         justify-content: space-between;
@@ -195,38 +228,5 @@ p, a {
 
     .phone-breadcrumbs {
         display: none;
-    }
-}
-
-.btn {
-    display: block;
-    width: fit-content;
-    outline: none;
-    padding: 1em;
-    font-weight: bolder;
-    background: none;
-    cursor: pointer;
-    border: 2px lighten($color: $primary, $amount: 20) solid;
-    color: lighten($color: $primary, $amount: 20);
-    border-radius: 10px;
-    text-decoration: none;
-    transition: color 0.1s ease-out,
-                background 0.1s ease-out,
-                border-color 0.1s ease-out;
-
-    &:hover {
-        background: $primary;
-        color: $fg;
-        border-color: $primary;
-    }
-
-    &:active {
-        background: $medium;
-        border-color: $medium;
-        transform: translateY(5px);
-    }
-
-    &:focus {
-        outline: auto;
     }
 }

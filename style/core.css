@@ -177,6 +177,41 @@ p, a {
   font-size: 1rem;
 }
 
+.btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: none;
+  padding: 1em;
+  font-weight: bolder;
+  background: none;
+  cursor: pointer;
+  border: 2px #cb8eac solid;
+  color: #cb8eac;
+  border-radius: 10px;
+  text-decoration: none;
+  -webkit-transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out;
+  transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out;
+}
+
+.btn:hover {
+  background: #A64D79;
+  color: #FFE6EF;
+  border-color: #A64D79;
+}
+
+.btn:active {
+  background: #6A1E55;
+  border-color: #6A1E55;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.btn:focus {
+  outline: auto;
+}
+
 @media screen and (min-width: 600px) {
   header {
     -webkit-box-pack: justify;
@@ -235,40 +270,5 @@ p, a {
   .phone-breadcrumbs {
     display: none;
   }
-}
-
-.btn {
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  outline: none;
-  padding: 1em;
-  font-weight: bolder;
-  background: none;
-  cursor: pointer;
-  border: 2px #cb8eac solid;
-  color: #cb8eac;
-  border-radius: 10px;
-  text-decoration: none;
-  -webkit-transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out;
-  transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out;
-}
-
-.btn:hover {
-  background: #A64D79;
-  color: #FFE6EF;
-  border-color: #A64D79;
-}
-
-.btn:active {
-  background: #6A1E55;
-  border-color: #6A1E55;
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
-}
-
-.btn:focus {
-  outline: auto;
 }
 /*# sourceMappingURL=core.css.map */
