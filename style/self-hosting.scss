@@ -44,8 +44,11 @@ main {
     width: 100%;
     display: grid;
     grid-template: 1fr / auto;
-    justify-content: center;
-    
+
+    * {
+        justify-self: center;
+    }
+
     picture {
         width: 100%;
     }
