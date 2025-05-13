@@ -9,7 +9,12 @@ convert() {
 
 extensions=("jpg" "avif" "webp")
 sizes=("100%" "50%" "33%")
-images=("img/original/congrats.jpg" "img/original/yay.jpg" "img/original/thumbs-up.jpg")
+images=(
+    "img/original/congrats.jpg"
+    "img/original/yay.jpg"
+    "img/original/thumbs-up.jpg"
+    "img/original/hero.jpg"
+)
 
 mkdir -p img/optimized/
 

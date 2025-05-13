@@ -8,7 +8,7 @@ main > article.hero {
 main > article.hero > div.bg {
   width: 100%;
   height: 100%;
-  background-image: url("../img/original/hero.jpg");
+  background-image: url("../img/optimized/hero-33.webp");
   background-position: center;
   background-size: cover;
   grid-column: 1/2;
@@ -76,6 +76,17 @@ main > article.info > section > a:active {
 }
 main > article.info > section > a:focus {
   outline: auto;
+}
+
+@media screen and (min-width: 600px) {
+  main > article.hero > div.bg {
+    background-image: url("../img/optimized/hero-50.webp");
+  }
+}
+@media screen and (min-width: 900px) {
+  main > article.hero > div.bg {
+    background-image: url("../img/optimized/hero-100.webp");
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
