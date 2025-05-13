@@ -41,7 +41,7 @@ main > form > div > input[type=text], main > form > div > input[type=password], 
   background: transparent;
   outline: none;
   border: none;
-  border: 2px rgb(98.3272727273, 98.3272727273, 109.6727272727) solid;
+  border: 2px rgb(122.6545454545, 122.6545454545, 136.3454545455) solid;
   border-radius: 10px;
   color: #FFE6EF;
   transition: 0.1s ease-out border-color;
