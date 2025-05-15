@@ -1,58 +1,79 @@
 main {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 main > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2em;
   width: 100%;
   max-width: 300px;
-  background: rgb(35.6436363636, 35.6436363636, 39.7563636364);
+  background: #242428;
   border-radius: 10px;
   gap: 1em;
 }
+
 main > form > div {
   width: 100%;
   position: relative;
   display: inline-block;
 }
+
 main > form > div:has(input[type=text]:focus) > label, main > form > div:has(input[type=password]:focus) > label {
   color: #FFE6EF;
 }
+
 main > form > div > label {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translateY(-50%) translateX(10%);
-  background: rgb(35.6436363636, 35.6436363636, 39.7563636364);
+  -webkit-transform: translateY(-50%) translateX(10%);
+          transform: translateY(-50%) translateX(10%);
+  background: #242428;
   padding: 3px;
-  color: rgb(203.3272727273, 203.3272727273, 208.6727272727);
+  color: #cbcbd1;
+  -webkit-transition: 0.1s color border-color;
   transition: 0.1s color border-color;
   display: inline;
 }
+
 main > form > div > label > p {
   display: inline;
-  color: rgb(202.7160493827, 142.2839506173, 172.1604938272);
+  color: #cb8eac;
 }
+
 main > form > div > input[type=text], main > form > div > input[type=password], main > form > div > input[type=email] {
   width: 100%;
   padding: 0.75em;
   background: transparent;
   outline: none;
   border: none;
-  border: 2px rgb(122.6545454545, 122.6545454545, 136.3454545455) solid;
+  border: 2px #7b7b88 solid;
   border-radius: 10px;
   color: #FFE6EF;
+  -webkit-transition: 0.1s ease-out border-color;
   transition: 0.1s ease-out border-color;
 }
+
 main > form > div > input[type=text]:focus, main > form > div > input[type=password]:focus, main > form > div > input[type=email]:focus {
   border-color: #A64D79;
 }
+
 main > form a {
   color: #FFE6EF;
   font-size: 0.9em;
 }
+
 main > form > input[type=submit] {
   padding: 0.75em;
   width: 100%;
@@ -62,11 +83,12 @@ main > form > input[type=submit] {
   color: #FFE6EF;
   font-weight: normal;
   border-radius: 10px;
-  transition: 0.1s background ease-out, 0.1s font-weight ease-out;
+  -webkit-transition: 0.1s background ease-out, 0.1s font-weight ease-out;
+  transition: 0.1s background ease-out, 0.1s font-weight ease-out;
 }
+
 main > form > input[type=submit]:hover {
   background-color: #A64D79;
   font-weight: bolder;
 }
-
 /*# sourceMappingURL=login.css.map */
