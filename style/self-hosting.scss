@@ -1,7 +1,7 @@
 @import "colors";
 
 main {
-    >article {
+    >div {
         max-width: 70ch;
         padding-left: 2em;;
         padding-right: 2em;;
@@ -10,7 +10,7 @@ main {
         gap: 1em;
         width: 100%;
 
-        >section {
+        >article {
 
             >h3 {
                 font-size: 1.25rem;

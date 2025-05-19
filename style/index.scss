@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 main {
-    >article.hero {
+    >div.hero {
         display: grid;
         grid-template: 1fr / 1fr;
         width: 100%;
@@ -18,7 +18,7 @@ main {
             grid-row: 1/2;
         }
 
-        >section {
+        >article {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,14 +40,14 @@ main {
         }
     }
 
-    >article.info {
+    >div.info {
         display: flex;
         flex-direction: column;
         gap: 1em;
         max-width: 600px;
         margin: 1em;
 
-        >section {
+        >article {
             padding: 2em;
             background: lighten($color: $bg, $amount: 4);
             border-radius: 10px;
@@ -98,13 +98,13 @@ main {
 }
 
 @media screen and (min-width: 600px) {
-    main > article.hero > div.bg {
+    main > div.hero > div.bg {
         background-image: url("../img/optimized/hero-50.webp");
     }
 }
 
 @media screen and (min-width: 900px) {
-    main > article.hero > div.bg {
+    main > div.hero > div.bg {
         background-image: url("../img/optimized/hero-100.webp");
     }
 }

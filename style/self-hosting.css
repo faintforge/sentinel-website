@@ -1,4 +1,4 @@
-main > article {
+main > div {
   max-width: 70ch;
   padding-left: 2em;
   padding-right: 2em;
@@ -13,24 +13,24 @@ main > article {
   width: 100%;
 }
 
-main > article > section > h3 {
+main > div > article > h3 {
   font-size: 1.25rem;
   font-weight: 500;
 }
 
-main > article > section > p, main > article > section > pre {
+main > div > article > p, main > div > article > pre {
   margin-bottom: 1em;
 }
 
-main > article > section a {
+main > div > article a {
   color: #bb6b93;
 }
 
-main > article > section a:visited {
+main > div > article a:visited {
   color: #babb6b;
 }
 
-main > article > section span.inlay {
+main > div > article span.inlay {
   background: #131315;
   padding: 2px;
   padding-left: 5px;
